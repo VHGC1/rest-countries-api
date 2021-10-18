@@ -14,14 +14,12 @@ const Dark = () => {
 
   return (
     <>
-      <modeContext>
-        <Button
-          onClick={changeTheme}
-          className={!darkMode ? "light-theme" : undefined}
-        >
-          {darkMode ? <IoMoon /> : <IoMoonOutline />} Dark Mode
-        </Button>
-      </modeContext>
+      <Button
+        onClick={changeTheme}
+        className={!darkMode ? "light-theme" : undefined}
+      >
+        {darkMode ? <IoMoon /> : <IoMoonOutline />} Dark Mode
+      </Button>
     </>
   );
 };

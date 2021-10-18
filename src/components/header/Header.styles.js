@@ -19,4 +19,10 @@ export const HeaderWrapper = styled("header")`
   @media (max-width: 900px){
     ${pathname === "/" ? null : "padding: 30px"}
   }
+
+  @media (max-width: 475px){
+    h1 {
+      font-size: 18px;
+    }
+  }
 `;
