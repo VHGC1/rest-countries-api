@@ -21,6 +21,8 @@ export const HeaderWrapper = styled("header")`
   }
 
   @media (max-width: 475px){
+    padding: 10px 25px;
+
     h1 {
       font-size: 18px;
     }

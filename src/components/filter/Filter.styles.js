@@ -6,6 +6,11 @@ export const Form = styled("form")`
   align-items: center;
   justify-content: space-between;
   padding: 40px 50px;
+
+  @media (max-width: 470px){
+    padding: 40px 25px;
+  }
+
 `;
 
 export const SearchInput = styled("div")`
@@ -47,6 +52,7 @@ export const SearchInput = styled("div")`
   }
 
   @media (max-width: 460px) {
+    width: 100%;
     margin-bottom: 20px;
   }
 `;
