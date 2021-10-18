@@ -37,6 +37,12 @@ export const Container = styled("div")`
   @media (max-width: 900px) {
     display: block;
   }
+
+  @media (max-width: 550px) {
+    img {
+      margin-bottom: 1rem;
+    }
+  }
 `;
 
 export const WrapperCountryDetails = styled("div")`
@@ -66,6 +72,10 @@ export const CountryDetails = styled("div")`
 
   span {
     font-weight: 300;
+  }
+
+  @media (max-width: 550px){
+    flex-direction: column;
   }
 `;
 
