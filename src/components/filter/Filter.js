@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { Form, SearchInput, Select } from "./Filter.styles";
 
 const Filter = ({ search, setSearch}) => {
+  const [select, setSelect] = useState("");
+  
   /*
   const [search, setSearch] = useState("");
-  const [select, setSelect] = useState("");
+  
 
   useEffect(() => {
     function filterCountry() {
@@ -41,8 +43,8 @@ const Filter = ({ search, setSearch}) => {
 
         <div className="select">
           <Select
-            
-            
+            value={select}
+            onChange={({ target }) => setSelect(target.value)}
           >
             <option value="" disabled>
               Filter by region
