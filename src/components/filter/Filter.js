@@ -48,7 +48,7 @@ const Filter = ({ search, setSearch, select, setSelect}) => {
               Filter by region
             </option>
             <option value="Africa">Africa</option>
-            <option value="Americas">Americas</option>
+            <option value="Americas">America</option>
             <option value="Asia">Asia</option>
             <option value="Europe">Europe</option>
             <option value="Oceania">Oceania</option>
