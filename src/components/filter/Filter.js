@@ -41,6 +41,7 @@ const Filter = ({ search, setSearch, select, setSelect}) => {
 
         <div className="select">
           <Select
+            name="Filter by region"
             value={select}
             onChange={({ target }) => setSelect(target.value)}
           >
