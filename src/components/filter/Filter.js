@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { Form, SearchInput, Select } from "./Filter.styles";
 
-const Filter = ({ search, setSearch}) => {
-  const [select, setSelect] = useState("");
-  
+const Filter = ({ search, setSearch, select, setSelect}) => {
   /*
   const [search, setSearch] = useState("");
   
@@ -52,7 +50,7 @@ const Filter = ({ search, setSearch}) => {
             <option value="Africa">Africa</option>
             <option value="Asia">Asia</option>
             <option value="Europe">Europe</option>
-            <option value="Oceania">Europe</option>
+            <option value="Oceania">Oceania</option>
           </Select>
         </div>
       </Form>
