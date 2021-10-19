@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={{
-      theme: theme === 'light' ? darkTheme : lightTheme,
+      theme: theme === 'light' ? lightTheme : darkTheme,
       toggleTheme,
     }}>
       <GlobalStyle />
