@@ -18,8 +18,14 @@ const Countries = () => {
   }, [request]);
 
   useEffect(() => {
-    data && setFilteredData(data.filter((country) => country.name.toLowerCase().includes(search.toLowerCase())))
-  }, [search, data]);
+    data &&
+      setFilteredData(
+        data.filter(
+          (country) =>
+            country.name.toLowerCase().includes(search.toLowerCase())
+        ).filter((country) => country.region.toLowerCase().includes(select.toLowerCase()))
+      );
+  }, [search, data, select]);
 
   return (
     <>
@@ -30,7 +36,11 @@ const Countries = () => {
         setSelect={setSelect}
       />
       {loading && <Loading />}
-      {data ? <CountriesFetch data={filteredData ? filteredData : data} /> : <p>{error}</p>}
+      {data ? (
+        <CountriesFetch data={filteredData ? filteredData : data} />
+      ) : (
+        <p>{error}</p>
+      )}
     </>
   );
 };
