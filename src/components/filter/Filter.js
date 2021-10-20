@@ -45,7 +45,7 @@ const Filter = ({ search, setSearch, select, setSelect}) => {
             value={select}
             onChange={({ target }) => setSelect(target.value)}
           >
-            <option value="" disabled>
+            <option value="" >
               Filter by region
             </option>
             <option value="Africa">Africa</option>

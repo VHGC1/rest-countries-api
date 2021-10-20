@@ -26,7 +26,7 @@ const CountriesFetch = ({ data }) => {
                   <Details>
                     <h3 className="country-name">{name}</h3>
                     <h4>
-                      Population: <span>{population}</span>
+                      Population: <span>{population.toLocaleString()}</span>
                     </h4>
                     <h4>
                       Region: <span>{region}</span>

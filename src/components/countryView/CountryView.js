@@ -59,7 +59,7 @@ const CountryView = () => {
                         Native Name: <span>{nativeName}</span>
                       </h5>
                       <h5>
-                        Population: <span>{population}</span>
+                        Population: <span>{population.toLocaleString()}</span>
                       </h5>
                       <h5>
                         Region: <span>{region}</span>
